@@ -1,51 +1,76 @@
-Task_05_Descriptive_Stats
+🏀 Task_05_Descriptive_Stats
 Overview
-This project explores the use of descriptive statistics and prompt engineering with large language models (LLMs) such as ChatGPT on a public sports dataset. Specifically, the NCAA Men's College Basketball 2025 dataset (cbb25.csv) is analyzed using Python, and basic natural language questions about the data are asked of ChatGPT to test its accuracy and reasoning.
+This project explores descriptive statistics and prompt engineering with large language models (LLMs) such as ChatGPT using a public sports dataset.
+The dataset analyzed is the NCAA Men's College Basketball 2025 season (cbb25.csv).
 
-Repository Structure
-Python_script/ — Python scripts and notebooks for data exploration, descriptive statistics, and visualization.
+The main objective was to:
 
-Results/ — Collection of LLM prompts, ChatGPT responses, and notes comparing model answers with ground truth from Python analysis.
+Perform data exploration and compute descriptive statistics using Python.
 
-visualizations/ — Visualization images generated during exploratory data analysis.
+Test ChatGPT’s ability to answer natural language questions about the dataset.
 
-README.md — This file, providing an overview and guide to the project.
-
-Dataset Information
+📂 Repository Structure
+bash
+Copy
+Edit
+Task_05_Descriptive_Stats/
+│
+├── Python_script/       # Python scripts and notebooks for data exploration & visualization
+├── Results/             # LLM prompts, ChatGPT responses, and comparison notes
+├── visualizations/      # Generated plots and charts (EDA visuals)
+└── README.md            # Project documentation
+📊 Dataset Information
 Dataset: NCAA Men’s College Basketball 2025 season (cbb25.csv)
 
-Number of teams: 364
+Teams: 364
 
-Key columns include: Team, Conference (CONF), Wins (W), Offensive Efficiency (ADJOE), Defensive Efficiency (ADJDE), Effective FG% Offensive (EFG_O), Turnovers (TOR), and others.
+Key Columns:
 
-Note: The dataset file is NOT included per assignment instructions; please download from Kaggle Dataset Link.
+Team
 
-Project Workflow
-Data Exploration and Descriptive Statistics
+CONF – Conference
 
-Loaded and examined dataset with pandas.
+W – Wins
 
-Computed basic statistics such as team counts, max/min values, averages, and distributions.
+ADJOE – Offensive Efficiency
 
-Created visualizations including histograms, bar charts, scatter plots, and correlation heatmaps.
+ADJDE – Defensive Efficiency
 
-Prompt Engineering and LLM Testing
+EFG_O – Offensive Effective FG%
 
-Selected key factual questions about the dataset.
+TOR – Turnovers
 
-Tested ChatGPT’s ability to answer these questions based on provided data samples.
+… and other advanced stats
 
-Recorded and compared ChatGPT’s answers with Python-derived ground truth.
+Note: Dataset file is NOT included in this repository as per assignment instructions. Please download from Kaggle.
 
-Documented successes, challenges, and observations in prompt testing logs.
+🔄 Project Workflow
+1. Data Exploration & Descriptive Stats
+Loaded and examined dataset with pandas
 
-Reporting and Reflection
+Computed:
 
-Organized findings and outputs in GitHub repository folders.
+Team counts
 
-Prepared progress updates aligned with assignment deadlines.
+Max/Min values
 
-Example Questions Tested with ChatGPT
+Averages & distributions
+
+Generated visualizations: histograms, bar charts, scatter plots, heatmaps
+
+2. Prompt Engineering & LLM Testing
+Selected factual, dataset-based questions
+
+Tested ChatGPT’s reasoning and accuracy
+
+Compared ChatGPT’s answers to Python-derived results
+
+3. Reporting & Reflection
+Organized results and prompts in dedicated folders
+
+Documented observations and success/failure cases
+
+❓ Example Questions Tested with ChatGPT
 How many teams are in the dataset?
 
 Which team had the most wins?
@@ -58,5 +83,10 @@ Which team has the highest offensive efficiency (ADJOE)?
 
 Which team has the best defensive efficiency (lowest ADJDE)?
 
-ChatGPT answered each of these correctly when provided with a sample of the dataset.
+Observation:
+ChatGPT answered these correctly when provided with an appropriate dataset sample.
 
+🚀 Key Learnings
+Prompt clarity significantly impacts LLM accuracy.
+
+Combining Python-based analytics with LLM reasoning enables fast insights and cross-verification.
