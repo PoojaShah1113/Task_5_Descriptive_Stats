@@ -90,3 +90,38 @@ ChatGPT answered these correctly when provided with an appropriate dataset sampl
 Prompt clarity significantly impacts LLM accuracy.
 
 Combining Python-based analytics with LLM reasoning enables fast insights and cross-verification.
+
+Advance Analytics
+
+3. Advanced Analytics
+
+Correlation Analysis: Calculated correlations between wins (W) and all key metrics to identify which factors most influence winning.
+
+Highest positive correlations: WAB (0.863), BARTHAG (0.749), ADJOE (0.682)
+
+Strongest negative correlations: RK (-0.759), ADJDE (-0.682), EFG_D (-0.669)
+
+Regression Modeling: Estimated the impact of key metrics on wins using linear regression.
+
+ADJOE: +0.32 wins per 1-point increase
+
+ADJDE: +0.38 wins per 1-point improvement (lower is better)
+
+Scenario Simulation: Predicted wins for Houston under different efficiency improvements:
+
+Current: 29.86 wins
+
++5 ADJOE: 31.48 wins
+
+-5 ADJDE: 31.74 wins
+
+LLM Evaluation: Tested ChatGPT’s ability to answer advanced statistical questions. Observed:
+
+Directionally correct reasoning (e.g., understanding defensive efficiency as negative correlation)
+
+Frequently misreported exact numerical values
+
+Missed some top metrics (e.g., WAB, RK)
+
+Scenario simulations inflated compared to Python predictions
+
